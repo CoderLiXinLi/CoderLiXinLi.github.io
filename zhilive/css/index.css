@@ -1,0 +1,132 @@
+body {
+  background-color: #e9e9e9;
+}
+
+.zj_layout {
+  margin: 0 auto;
+  position: relative;
+}
+
+/*
+  焦点图
+*/
+.zj_banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.zj_banner img {
+  width: 100%;
+}
+
+.zj_liveInfo {
+  background-color: white;
+  width: 100%;
+  padding: 0px 0.1rem 0.1rem;
+  margin-top: -0.1rem;
+}
+
+.zj_liveInfo .zj_liveInfo_title {
+  padding-top: 0.3rem;
+  font-size: 0.28rem;
+  line-height: 0.3rem;
+}
+.zj_jianjie_line {
+  background-color: #e9e9e9;
+  height: 0.15rem;
+}
+
+.zj_liveInfo .zj_liveInfo_info {
+  font-size: 0.28rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.15rem;
+}
+
+.zj_liveInfo .zj_liveInfo_info .zj_liveInfo_info_p1 {
+  font-size: 0.26rem;
+  color: #333333;
+}
+
+.zj_liveInfo .zj_liveInfo_info .zj_liveInfo_info_p2 {
+  color: #cccccc;
+  padding-right: 0.1rem;
+  font-size: 0.26rem;
+}
+
+.zj_jianjie {
+  font-size: 0.28rem;
+  line-height: 0.5rem;
+  padding: 0.1rem 0.1rem 0.1rem;
+}
+
+.zj_jianjie p {
+  color: #666666;
+  line-height: 0.4rem;
+}
+
+.zj_info {
+  padding: 0.2rem 0px 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zj_info a {
+  width: 8.67rem;
+  color: #0707de;
+  font-size: 0.28rem;
+  font-weight: bold;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0rem 0.3rem;
+}
+
+.zj_content {
+  background-color: #ffffff;
+  padding-top: 0.2rem;
+}
+
+.zj_content .zj_tips {
+  background-color: #0707de;
+  border-radius: 0.56rem;
+  text-align: center;
+  padding: 0.1rem 0.2rem;
+  margin: 0rem 0.2rem;
+}
+
+.zj_content .zj_tips a {
+  color: #ffffff;
+}
+
+.zj_pingtai {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  height: 1.8rem;
+}
+
+.zj_pingtai div {
+  width: 33%;
+  height: 1.3rem;
+  padding: 0.14rem;
+}
+
+.zj_pingtai div img {
+  margin: 0.04rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f6f6f6;
+  padding: 0rem 0.1rem;
+}
+.zj_pingtai div p {
+  color: #333333;
+  font-size: 0.26rem;
+}
+
+#zj_content2 {
+  display: none;
+}
