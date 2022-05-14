@@ -6,6 +6,12 @@
     <meta name="keywords" content="知九科技" />
     <meta name="description" content="hebeizhijiu.com" />
     <title>天津大学项目路演（河北）专场</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js/remDefine.js"></script>
     <link rel="stylesheet" href="css/base.css" />
@@ -65,5 +71,39 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function compareDate(beginDateStr, endDateStr) {
+        var curDate = new Date(),
+          beginDate = new Date(beginDateStr),
+          endDate = new Date(endDateStr);
+        if (curDate >= beginDate && curDate <= endDate) {
+          return true;
+        }
+        return false;
+      }
+
+      let liveStart = "2022/05/17 09:00";
+      let liveEnd = "2022/05/17 12:00";
+
+      // let liveStart = "2022/05/14 16:10";
+      // let liveEnd = "2022/05/14 16:11";
+
+      let endTime = new Date(liveEnd.replace(/-/g, "/")); //对比时间
+
+      //用计时器去实现它
+      setInterval(function () {
+        let now = new Date(); //当前时间
+        console.log(now);
+        if (now.getTime() > endTime.getTime()) {
+          $("#aaaaa").text("直播已经结束");
+        } else {
+          // console.log("小于指定时间");
+        }
+        if (compareDate(liveStart, liveEnd)) {
+          $("#aaaaa").text("直播进行中");
+        }
+      }, 1000);
+    </script>
   </body>
 </html>
